@@ -1,38 +1,116 @@
 .App {
-  text-align: center;
+  max-width: 860px;
+  margin: 40px auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  background: #c2386691;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+button:hover {
+  background-color: #c23866a2;
+  box-shadow: 10px 3px 50px #c2386638;
+  border: none;
+  transition: 0.2s;
+  color: #fff;
+}
+
+button:active {
+  background-color: #c23866b0;
+  box-shadow: 10px 5px 60px #c2386627;
+  transition: 0.2s;
+}
+
+img {
+  width: 140px;
+  height: 140px;
+}
+
+.card-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.card .front {
+  transform: rotateY(90deg);
+  transition: all ease-in 0.2s;
+  position: absolute;
+  border-radius: 20px;
+  border: 6px solid #ffd6e8de;
+}
+
+.flipped .front {
+  transform: rotateY(0deg);
+  transition-delay: 0.2s;
+}
+
+.card .back {
+  transition: all ease-in 0.2s;
+  transition-delay: 0.2s;
+  border-radius: 20px;
+  border: 6px solid #ffd6e8de;
+}
+
+.flipped .back {
+  transform: rotateY(90deg);
+  transition-delay: 0.2s;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .card-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 830px) {
+  .card-grid {
+    grid-template-columns: 1fr 1fr 1fr;
   }
-  to {
-    transform: rotate(360deg);
+
+  button {
+    font-size: 14px;
+    padding: 4px 8px;
   }
 }
+
+@media (max-width: 578px) {
+  .card-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 2px 6px;
+  }
+
+  img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 288px) {
+  .card-grid {
+    grid-template-columns: 1fr ;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 2px 6px;
+  }
+
+  img {
+    width: 120px;
+    height: 120px;
+  }
+};
