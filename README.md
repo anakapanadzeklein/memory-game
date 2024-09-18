@@ -1,75 +1,87 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+Memory Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Memory Game built with React.js! This game challenges your memory by asking you to match pairs of cards. It's a simple and fun project that demonstrates the basics of React and state management.
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+Table of Contents:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Getting Started / 
+Features / 
+How to Play / 
+File Structure / 
+Technologies Used 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Getting Started:
+To get started with this project, follow these steps:
+Clone the Repository:
 
-### `npm run build`
+git clone https://github.com/anakapanadzeklein/memory-game.git
+cd memory-game
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Install Dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Make sure you have Node.js installed. Then run:
 
-### `npm run eject`
+npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Start the Development Server:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+npm start
 
-## Learn More
+This will start the development server and open the game in your default web browser.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+Features:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+. Card matching game with a shuffle feature.
 
-### Analyzing the Bundle Size
+. Displays the number of turns taken.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+. Simple and responsive design.
 
-### Making a Progressive Web App
+. Console logging for debugging and game status tracking.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+How to Play:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+. Click on a card to flip it.
 
-### `npm run build` fails to minify
+. Click on another card to try and find a match.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# memory-game
-A React-based memory game where players match pairs of cards. Includes responsive design and organized components.
->>>>>>> a9b42e866fa5dcd71d5ef64f0fe545da48d556d6
+. If the cards match, they remain face up. If they do not match, they flip back after a short delay.
+
+. Continue matching all pairs of cards to win the game.
+
+. Use the "New Game" button to shuffle the cards and start a new game.
+
+
+
+File Structure:
+
+. index.js - Entry point of the application.
+
+. App.js - Main component that handles game logic and state.
+Components/
+
+. Header.jsx - Displays the game title.
+
+. Card.jsx - Represents a single card with flip logic.
+
+. CardList.jsx - Renders the grid of cards.
+
+
+
+Technologies Used:
+
+React - JavaScript library for building user interfaces.
+
+CSS - Styling the application.
