@@ -7,12 +7,12 @@ import './App.css';
 
 
 const cardImages = [
-  { src: "/CardImages/heart.png", matched: false },
-  { src: "/CardImages/cherry-blossom.png", matched: false },
-  { src: "/CardImages/pink-bow.png", matched: false },
-  { src: "/CardImages/white-bow.png", matched: false },
-  { src: "/CardImages/star.png", matched: false },
-  { src: "/CardImages/shell.png", matched: false }
+  { src: process.env.PUBLIC_URL + "/CardImages/heart.png", matched: false },
+  { src: process.env.PUBLIC_URL + "/CardImages/cherry-blossom.png", matched: false },
+  { src: process.env.PUBLIC_URL + "/CardImages/pink-bow.png", matched: false },
+  { src: process.env.PUBLIC_URL + "/CardImages/white-bow.png", matched: false },
+  { src: process.env.PUBLIC_URL + "/CardImages/star.png", matched: false },
+  { src: process.env.PUBLIC_URL + "/CardImages/shell.png", matched: false },
 ];
 
 
