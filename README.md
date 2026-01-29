@@ -4,40 +4,6 @@ Welcome to the Memory Game built with React.js! This game challenges your memory
 
 
 
-Table of Contents:
-
-Getting Started / 
-Features / 
-How to Play / 
-File Structure / 
-Technologies Used 
-
-
-
-Getting Started:
-To get started with this project, follow these steps:
-Clone the Repository:
-
-git clone https://github.com/anakapanadzeklein/memory-game.git
-cd memory-game
-
-
-Install Dependencies:
-
-Make sure you have Node.js installed. Then run:
-
-npm install
-
-
-
-Start the Development Server:
-
-npm start
-
-This will start the development server and open the game in your default web browser.
-
-
-
 Features:
 
 . Card matching game with a shuffle feature.
@@ -47,7 +13,6 @@ Features:
 . Simple and responsive design.
 
 . Console logging for debugging and game status tracking.
-
 
 
 
@@ -62,21 +27,6 @@ How to Play:
 . Continue matching all pairs of cards to win the game.
 
 . Use the "New Game" button to shuffle the cards and start a new game.
-
-
-
-File Structure:
-
-. index.js - Entry point of the application.
-
-. App.js - Main component that handles game logic and state.
-Components/
-
-. Header.jsx - Displays the game title.
-
-. Card.jsx - Represents a single card with flip logic.
-
-. CardList.jsx - Renders the grid of cards.
 
 
 
